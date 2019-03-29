@@ -85,4 +85,5 @@ def play(board)
     turn(board)
     turn_count+=1
   end
+  winner(board) ? winner(board) : "draw"
 end
