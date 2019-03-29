@@ -81,7 +81,7 @@ end
 
 def play(board)
   turn_count = 0
-  while !over?(board)
+  while !won?(board) && !draw?(board)
     turn(board)
     turn_count+=1
   end
