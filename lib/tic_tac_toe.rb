@@ -87,7 +87,7 @@ def play(board)
   end
   if winner(board)
     puts "Congratulations #{winner(board)}"
-    else
-       "draw"
+  else
+    puts "draw"
   end
 end
