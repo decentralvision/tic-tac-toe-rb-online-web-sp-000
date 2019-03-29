@@ -84,7 +84,6 @@ def play(board)
   while !over?(board)
     turn(board)
     turn_count+=1
-    draw?(board)
   end
   winner(board) ? winner(board) : "draw"
 end
