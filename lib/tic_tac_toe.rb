@@ -86,7 +86,7 @@ def play(board)
     turn_count+=1
   end
   if winner(board)
-    puts "Congratulations #{winner(board)}"
+    puts "Congratulations #{winner(board)}!"
   else
     puts "draw"
   end
