@@ -81,9 +81,11 @@ end
 
 def play(board)
   turn_count = 0
-  while (!won?(board) && !draw?(board))
+  while !over?(board)
     turn(board)
     turn_count+=1
   end
-  winner(board) ? winner(board) : "draw"
+  if winner(board)
+    puts "Congratulations #{winner(board)}"
+    else: "draw"
 end
